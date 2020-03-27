@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 public class CustomerClass {
 	private String firstName;
 
-	@NotNull
+	@NotNull(message = "is Required")
 	@Size(min = 1,message = "is Required")
 	private String lastName;
 
